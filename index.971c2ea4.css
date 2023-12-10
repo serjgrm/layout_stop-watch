@@ -1,0 +1,57 @@
+.page {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+}
+
+.page__stop-watch {
+  border: 5px dotted #000;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 80vmin;
+  height: 80vmin;
+  display: flex;
+  position: relative;
+}
+
+.page .minute-hand {
+  transform-origin: bottom;
+  background-color: #ff0;
+  width: 5px;
+  height: 40vmin;
+  animation: 5s linear infinite rotate;
+  position: absolute;
+  top: 0;
+}
+
+.page .hour-hand {
+  transform-origin: bottom;
+  background-color: red;
+  width: 10px;
+  height: 20vmin;
+  animation: 60s linear infinite rotate;
+  position: absolute;
+  top: 20vmin;
+}
+
+.page .stop-watch-center {
+  background-color: orange;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=index.971c2ea4.css.map */
